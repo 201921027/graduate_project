@@ -19,7 +19,7 @@
 #### <방안1>
 kogpt2 모델 하나만 사용하여 emotion classification & comment generation을 한 번에 수행
 
-*(실행파일: gp_original_model.ipynb)
+*(실행파일: gp_original_model.ipynb)*
 
 > ( 방안1의 train input form: '일기데이터' ) / ( 방안1의 train label form: '감정|공감코멘트' )
 
@@ -35,19 +35,25 @@ kobert를 이용하여 1차적으로 감정분류를 수행하고, 이후 kogpt2
 #### <결과>
 최종적으로 <방안2>의 방식을 채택하였습니다. 아직 원인은 파악하지 못했으나 <방안1>에서의 감정 분류가 생각처럼 잘 되지 않았으며, 생성되는 공감코멘트 또한 <방안2>의 공감코멘트의 quality가 더 높았습니다.
 
-#### (참고)
+#### <참고>
 gp_original_model.ipynb , gp_new_model_bert.ipynb , gp_new_model_gpt2.ipynb 파일에는 모두 참고한 사이트의 링크가 걸려있습니다. 또한 각 파일은 모두 평가를 수행하는 코드를 포함하고 있습니다.
 
 
 * ### 모델
-훈련시킨 모델은 checkpoint 디렉토리에 저장되도록 경로를 설정하였습니다. 
+훈련시킨 모델은 checkpoint 디렉토리에 저장되도록 경로를 설정하였습니다. colab의 ram 용량 문제로 모든 gpt 모델은 batch_size=1로 훈련되었습니다.  (방안1)과 (방안2)의 성능을 비교하기 위해 두 방안 모두 batch_size=1, epoch=30으로 훈련을 시킨 후 성능을 평가하였습니다. 평가 결과 (방안2)의 성능이 더 뛰어났기에 (방안2) 모델을 최종 선정한 뒤, (방안2)의 모델의 성능을 조금 더 높이기 위해 여러 epoch으로 훈련을 수행해보았습니다. 
 
 #### <(방안1)의 kogpt를 훈련시킨 모델>
+> batch_size=1, epoch=30의 (방안1)' kogpt 훈련 모델: [다운로드](https://drive.google.com/drive/folders/1-9VlG0_8uyps8l7TSr1NsX8lsDs4gXeq?usp=sharing)
 
 #### <(방안2)의 kobert를 훈련시킨 모델>
+> (방안2)' kobert 훈련 모델: [다운로드](https://drive.google.com/file/d/1hjNbMDWyiM124gV2n3H9x0GGESdRAZrf/view?usp=sharing)
 
 #### <(방안2)의 kogpt를 훈련시킨 모델>
-colab의 ram 용량 문제로 batch_size=1로 훈련되었습니다. batch_size=1로 고정한채로 epoch 횟수를 30, 20, 15, 10, 1로 점차 줄여가며 훈련을 시켰을 때, 의외로 epoch=1일 때의 성능이 가장 뛰어난 것을 확인할 수 있었습니다. 
+batch_size=1로 고정한채로 epoch 횟수를 30, 20, 15, 10, 1로 점차 줄여가며 훈련을 시켰을 때, 의외로 epoch=1일 때의 성능이 가장 뛰어난 것을 확인할 수 있었습니다. 
+
+> batch_size=1, epoch=30의 (방안2)' kogpt 훈련 모델: [다운로드](https://drive.google.com/drive/folders/1vr3n1izLJYfwcP4VeicSw-0VzOrFYl8J?usp=sharing)
+
+> batch_size=1, epoch=1의 (방안2)' kogpt 훈련 모델: [다운로드](https://drive.google.com/drive/folders/1zMPrYGnetaIH7Er6NDqADfP_AcXN5e4A?usp=sharing)
 
 
 * ### (참고) gp_data_summarize_kobart.ipynb에 대하여
