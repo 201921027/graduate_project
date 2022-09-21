@@ -43,8 +43,7 @@ gp_original_model.ipynb , gp_new_model_bert.ipynb , gp_new_model_gpt2.ipynb 파�
 훈련시킨 모델은 checkpoint 디렉토리에 저장되도록 경로를 설정하였습니다. colab의 ram 용량 문제로 모든 gpt 모델은 batch_size=1로 훈련되었습니다.  (방안1)과 (방안2)의 성능을 비교하기 위해 두 방안 모두 batch_size=1, epoch=30으로 훈련을 시킨 후 성능을 평가하였습니다. 평가 결과 (방안2)의 성능이 더 뛰어났기에 (방안2) 모델을 최종 선정한 뒤, (방안2)의 모델의 성능을 조금 더 높이기 위해 여러 epoch으로 훈련을 수행해보았습니다. 
 
 #### <(방안1)의 kogpt를 훈련시킨 모델>
-> batch_size=1, epoch=30의 (방안1)' kogpt 훈련 모델: [다운로드](https://drive.google.com/drive/folders/1-9VlG0_8uyps8l7TSr1NsX8lsDs4gXeq?usp=sharing)
-https://drive.google.com/uc?export=download&id=1-9VlG0_8uyps8l7TSr1NsX8lsDs4gXeq
+> batch_size=1, epoch=30의 (방안1)' kogpt 훈련 모델: [다운로드](https://drive.google.com/file/d/1ChdPqcFGFr8QckD9fiqRFMKOvDdr2I-P/view?usp=sharing)
 
 #### <(방안2)의 kobert를 훈련시킨 모델>
 > (방안2)' kobert 훈련 모델: [다운로드](https://drive.google.com/file/d/1hjNbMDWyiM124gV2n3H9x0GGESdRAZrf/view?usp=sharing)
@@ -52,9 +51,9 @@ https://drive.google.com/uc?export=download&id=1-9VlG0_8uyps8l7TSr1NsX8lsDs4gXeq
 #### <(방안2)의 kogpt를 훈련시킨 모델>
 batch_size=1로 고정한채로 epoch 횟수를 30, 20, 15, 10, 1로 점차 줄여가며 훈련을 시켰을 때, 의외로 epoch=1일 때의 성능이 가장 뛰어난 것을 확인할 수 있었습니다. 
 
-> batch_size=1, epoch=30의 (방안2)' kogpt 훈련 모델: [다운로드](https://drive.google.com/drive/folders/1vr3n1izLJYfwcP4VeicSw-0VzOrFYl8J?usp=sharing)
+> batch_size=1, epoch=30의 (방안2)' kogpt 훈련 모델: [다운로드](https://drive.google.com/file/d/16blY-V7oIaF20o0AluH1oPKpwSpmx_jH/view?usp=sharing)
 
-> batch_size=1, epoch=1의 (방안2)' kogpt 훈련 모델: [다운로드](https://drive.google.com/drive/folders/1zMPrYGnetaIH7Er6NDqADfP_AcXN5e4A?usp=sharing)
+> batch_size=1, epoch=1의 (방안2)' kogpt 훈련 모델: [다운로드](https://drive.google.com/file/d/1mNB5Q16OwlnuoPjFJlTAyhgj3ILcgSAI/view?usp=sharing)
 
 
 * ### (참고) gp_data_summarize_kobart.ipynb에 대하여
