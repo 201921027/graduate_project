@@ -11,7 +11,7 @@
 
 감정 분류는 총 5가지 종류로 분류하였습니다. (기쁨, 슬픔, 두려움, 분노, unknown)
 
-전처리한 일기 데이터셋에 대해 감정과 공감코멘트를 라벨링한 파일(train dataset): [다운로드](https://drive.google.com/file/d/1b_wNzeSSiYj1WuoYZwp2paPvIkCEXyQn/view?usp=sharing)
+> 전처리한 일기 데이터셋에 대해 감정과 공감코멘트를 라벨링한 파일(train dataset): [다운로드](https://drive.google.com/file/d/1b_wNzeSSiYj1WuoYZwp2paPvIkCEXyQn/view?usp=sharing)
 
 
 * ### 연구 수행 방식
@@ -65,17 +65,17 @@ batch_size=1로 고정한채로 epoch 횟수를 30, 20, 15, 10, 1로 점차 줄�
 
 data 디렉토리는 ipynb 파일과 같은 디렉토리에 둡니다.
 
-data 디렉토리를 같은 위치에 두고, 위의 ipynb 파일을 모두 수행했을 시, 자동으로 kobert, kobertscore, kogpt2 등과 같은 디렉토리가 다운로드되어 다음과 같은 디렉토리 형태가 됩니다.
+data 디렉토리를 같은 위치에 두고, 위의 ipynb 파일을 모두 수행했을 시, 자동으로 KoBERT, KoBERTScore, KoGPT2 등과 같은 디렉토리가 다운로드되어 다음과 같은 디렉토리 형태가 됩니다.
 
 ![image](https://user-images.githubusercontent.com/81811255/191420939-5cf8d607-9fea-48be-9d66-94a2e2fddb5d.png)
 
-data 디렉토리 내부 형태는 다음과 같습니다. total-data.csv 디렉토리는 무시해도 무방합니다.
+data 디렉토리 내부 형태는 다음과 같습니다. kobart_after, kobart_before, total-data.csv 디렉토리는 무시해도 무방합니다.
 
 ![image](https://user-images.githubusercontent.com/81811255/191418517-9a532cb4-ee97-4db7-b3f7-2f6ae3dcdd30.png)
 
 ![image](https://user-images.githubusercontent.com/81811255/191418538-0834a640-6528-48cf-be13-9f41320a9732.png)
 
-new-model(bert)_train_data.tsv와 new-model(bert)_test_data.tsv는 kobert를 수행하기 위해 csv 파일을 tsv 파일로 변환한 것입니다.  gp_new_model_bert.ipynb 파일을 처음부터 수행할 시 tsv 파일은 자동으로 생성되게 되어있습니다. 본 tsv 파일을 드라이브 링크로 불러와 사용하기 때문에, tsv 파일의 링크를 생성한 뒤, 링크를 가진 모든 사용자에게 공개하도록 설정하여 kobert룰 훈련시킬 때 사용하면 됩니다. gp_new_model_bert.ipynb 파일에 적혀있는 링크는 글쓴이의  tsv 파일로 연결된 url입니다. 본인 파일로 경로를 변경하여 사용하고 싶다면 url 중간의 파일 id 링크를 변경하여 사용하면 됩니다.
+new-model(bert)_train_data.tsv와 new-model(bert)_test_data.tsv는 kobert를 수행하기 위해 csv 파일을 tsv 파일로 변환한 것입니다.  gp_new_model_bert.ipynb 파일에 tsv 파일을 생성하는 코드가 포함되어 있습니다. 본 tsv 파일을 드라이브 링크로 불러와 사용하기 때문에, tsv 파일의 링크를 생성한 뒤, 링크를 가진 모든 사용자에게 공개하도록 설정하여 kobert룰 훈련시킬 때 사용하면 됩니다. gp_new_model_bert.ipynb 파일에 적혀있는 링크는 글쓴이의  tsv 파일로 연결된 url입니다. 본인 파일로 경로를 변경하여 사용하고 싶다면 url 중간의 파일 id 링크를 변경하여 사용하면 됩니다.
 
 ![image](https://user-images.githubusercontent.com/81811255/191421739-bfcdf98f-c2fb-4b6d-a38e-880acd102a77.png)
 
