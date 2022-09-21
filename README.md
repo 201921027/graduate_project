@@ -44,6 +44,7 @@ gp_original_model.ipynb , gp_new_model_bert.ipynb , gp_new_model_gpt2.ipynb 파�
 
 #### <(방안1)의 kogpt를 훈련시킨 모델>
 > batch_size=1, epoch=30의 (방안1)' kogpt 훈련 모델: [다운로드](https://drive.google.com/drive/folders/1-9VlG0_8uyps8l7TSr1NsX8lsDs4gXeq?usp=sharing)
+https://drive.google.com/uc?export=download&id=1-9VlG0_8uyps8l7TSr1NsX8lsDs4gXeq
 
 #### <(방안2)의 kobert를 훈련시킨 모델>
 > (방안2)' kobert 훈련 모델: [다운로드](https://drive.google.com/file/d/1hjNbMDWyiM124gV2n3H9x0GGESdRAZrf/view?usp=sharing)
