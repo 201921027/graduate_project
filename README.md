@@ -92,6 +92,6 @@ bart를 수행 시, 조금 더 핵심적인 feature를 추출하여 summarizatio
 
 되먹임은 총 2번 수행하였습니다. (1번: 사람이 만든 코퍼스, 2번: kobart 자신이 만든 코퍼스)
 
-train된 kobart model 원본(.ckpt): https://drive.google.com/file/d/1-P7Yc9s25lwbh_iWnfg9Laj5DfknGuKS/view?usp=sharing
+train된 kobart model 원본(.ckpt): [다운로드](https://drive.google.com/file/d/1-P7Yc9s25lwbh_iWnfg9Laj5DfknGuKS/view?usp=sharing)
 
-from_pretrained()로 불러올 수 있도록 정제한 model 파일(.bin): https://drive.google.com/file/d/1-bqNm-OqVA72fbDDZGJHpofLrLvGdt9C/view?usp=sharing
+from_pretrained()로 불러올 수 있도록 정제한 model 파일(.bin): [다운로드](https://drive.google.com/file/d/1-bqNm-OqVA72fbDDZGJHpofLrLvGdt9C/view?usp=sharing)
