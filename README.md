@@ -80,3 +80,14 @@ new-model(bert)_train_data.tsv와 new-model(bert)_test_data.tsv는 kobert를 수
 ![image](https://user-images.githubusercontent.com/81811255/191421739-bfcdf98f-c2fb-4b6d-a38e-880acd102a77.png)
 
 
+* ### (추가) KoBART로 감정코멘트 생성하기 + 데이터 되먹임
+
+기본적으로 감정코멘트는 generation이라기보단 summarization에 가까운 task이기에, GPT보다 BART에서의 성능이 더 뛰어남을 확인하였습니다. KoGPT 대신 KoBART를 이용하여 감정코멘트를 생성한 파일은 다음과 같습니다. 
+
+*(kobart 훈련을 위한 데이터전처리: _gp_bart_data_processing.ipynb)*
+
+*(kobart 훈련: _gp_bart_recurrent_train.ipynb / 감정분류(BERT)~코멘트생성(BART) 전체수행: _gp_bart_model_conv.ipynb)*
+
+bart를 수행 시, 조금 더 핵심적인 feature를 추출하여 summarization할 수 있도록 데이터를 되먹였습니다. (직접 만든 코퍼스로 kobart를 학습시킨 뒤, 학습된 kobart가 train set에 대하여 summarization하게 하여, 자신이 summarization한 코퍼스로 다시 kobart 학습 수행)
+
+되먹임은 총 2번 수행하였습니다. (1번: 사람이 만든 코퍼스, 2번: kobart 자신이 만든 코퍼스)
