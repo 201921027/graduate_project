@@ -91,3 +91,7 @@ new-model(bert)_train_data.tsv와 new-model(bert)_test_data.tsv는 kobert를 수
 bart를 수행 시, 조금 더 핵심적인 feature를 추출하여 summarization할 수 있도록 데이터를 되먹였습니다. (직접 만든 코퍼스로 kobart를 학습시킨 뒤, 학습된 kobart가 train set에 대하여 summarization하게 하여, 자신이 summarization한 코퍼스로 다시 kobart 학습 수행)
 
 되먹임은 총 2번 수행하였습니다. (1번: 사람이 만든 코퍼스, 2번: kobart 자신이 만든 코퍼스)
+
+train된 kobart model 원본(.ckpt): https://drive.google.com/file/d/1-P7Yc9s25lwbh_iWnfg9Laj5DfknGuKS/view?usp=sharing
+
+from_pretrained()로 불러올 수 있도록 정제한 model 파일(.bin): https://drive.google.com/file/d/1-bqNm-OqVA72fbDDZGJHpofLrLvGdt9C/view?usp=sharing
