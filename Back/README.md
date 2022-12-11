@@ -11,7 +11,7 @@
 >
 >KoBART훈련모델: [다운로드](https://drive.google.com/file/d/1SVxjc6sqRC19PGeY-B4fMqy1bN1QqA0t/view?usp=sharing)
 >
-> 두개의 모델을 다운 받은 후 app.py와 같은 폴더 내에 위치시키도록 함
+> 두개의 모델을 다운 받은 후 app.py와 같은 폴더 내에 위치
 
  
 
