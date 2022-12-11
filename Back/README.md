@@ -33,7 +33,7 @@
 
  
 
-*첫 실행전 다운 받아야할 패키지
+* 첫 실행전 다운 받아야할 패키지
 >```python
 >!pip install gluonnlp
 >```
